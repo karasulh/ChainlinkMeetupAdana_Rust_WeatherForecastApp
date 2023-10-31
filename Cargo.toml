@@ -1,0 +1,12 @@
+[package]
+name = "adanachainlinkmeetup_weatherforecastapp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = {version = "0.11.22" , features = ["blocking"] } #to request to the web api
+tokio = "1.33.0" #to use async function of ipinfo
+serde_json = "1.0.108" #to deserialize json
+ipinfo = "2.2.0" #to get detailed information from our ip address
